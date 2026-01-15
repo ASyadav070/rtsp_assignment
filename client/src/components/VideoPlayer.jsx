@@ -131,11 +131,11 @@ const VideoPlayer = ({ rtspUrl, isPlaying, volume, onPlayPause, onVolumeChange }
             {isPlaying ? (
               renderPlayer()
             ) : (
-              <div className="video-placeholder">
+              <div className="video-placeholder clickable" onClick={onPlayPause}>
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z" />
                 </svg>
-                <p>Stream paused</p>
+                <p>Stream paused - Click to play</p>
               </div>
             )}
           </>

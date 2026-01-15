@@ -116,11 +116,26 @@ body {
   color: #666;
 }
 
+.video-placeholder.clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.video-placeholder.clickable:hover {
+  color: #00d9ff;
+  background: rgba(0, 217, 255, 0.05);
+}
+
+.video-placeholder.clickable:hover svg {
+  transform: scale(1.1);
+}
+
 .video-placeholder svg {
   width: 80px;
   height: 80px;
   margin-bottom: 15px;
   opacity: 0.5;
+  transition: transform 0.2s ease;
 }
 
 /* Video Controls */

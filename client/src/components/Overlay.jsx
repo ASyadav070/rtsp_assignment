@@ -1,11 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import Draggable from 'react-draggable';
 
-/**
- * Overlay Component
- * Renders a single overlay element (text or image) with drag and resize capabilities
- * Uses custom resize handle to avoid conflicts with react-draggable
- */
 const Overlay = ({ overlay, containerBounds, onPositionChange, onSizeChange }) => {
   const nodeRef = useRef(null);
   const [isResizing, setIsResizing] = useState(false);
@@ -32,7 +27,6 @@ const Overlay = ({ overlay, containerBounds, onPositionChange, onSizeChange }) =
       height: size.height,
     };
 
-    // Track the current size during resize
     let currentSize = { width: size.width, height: size.height };
 
     const handleMouseMove = (moveEvent) => {

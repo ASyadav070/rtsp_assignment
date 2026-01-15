@@ -1,15 +1,10 @@
 import React from 'react';
 import Overlay from './Overlay';
 
-/**
- * OverlayContainer Component
- * Manages and renders all overlays on top of the video player
- */
 const OverlayContainer = ({ overlays, onPositionChange, onSizeChange }) => {
   const containerRef = React.useRef(null);
   const [containerBounds, setContainerBounds] = React.useState(null);
 
-  // Update container bounds on mount and resize
   React.useEffect(() => {
     const updateBounds = () => {
       const videoContainer = document.getElementById('video-container');
