@@ -56,7 +56,7 @@ RTSP/
 
 | Layer      | Technology              |
 |------------|-------------------------|
-| Frontend   | React 18                |
+| Frontend   | React 19+vite                |
 | Backend    | Python Flask            |
 | Database   | MongoDB                 |
 | Video      | RTSP via RTSP.me        |
